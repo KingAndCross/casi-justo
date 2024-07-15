@@ -186,6 +186,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const gameoverText = gameoverModal.querySelector(".gameover-text");
     gameoverText.innerHTML = `Obtuviste ${points} puntos, el puntaje más bajo posible era ${minimalPossiblePoints}.`;
   }
-
-  setObjective();
 });

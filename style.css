@@ -200,7 +200,7 @@ dialog {
 }
 
 dialog#gameover-modal {
-  height: fit-content;
+  height: 25lvh;
 }
 
 dialog p {
