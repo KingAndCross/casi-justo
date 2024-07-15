@@ -17,7 +17,7 @@ body {
   position: fixed;
   width: 100lvw;
   height: 100lvh;
-  padding: 15lvw 5lvw;
+  padding: 7lvw 5lvw 20lvw;
   box-sizing: border-box;
   background-color: var(--bg-color);
   display: flex;
@@ -193,7 +193,7 @@ dialog {
   position: fixed;
   border: none;
   outline: none;
-  height: 80lvh;
+  height: 60lvh;
   width: 70lvw;
   border-radius: 15px;
   margin: auto;
@@ -224,7 +224,7 @@ dialog#gameover-modal p {
 }
 
 .modal-wrapper video {
-  width: 80%;
+  height: 40%;
 }
 
 .modal-wrapper .btn {
