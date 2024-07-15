@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function newGame() {
     round = 0;
     points = 0;
+    minimalPossiblePoints = 0;
     inputIndex = 0;
     setTimer();
     clearInputs();
@@ -170,11 +171,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     for (let i = 0; i < numbers.length; i++) {
       for (let j = i; j < numbers.length; j++) {
         const product = numbers[i] * numbers[j];
-        const difference = target - product;
+        const difference = Math.abs(target - product);
         if (difference === 0) {
           return 0;
         }
-        if (Math.abs(difference) < Math.abs(smallestDifference)) {
+        if (difference < smallestDifference) {
           smallestDifference = difference;
         }
       }
